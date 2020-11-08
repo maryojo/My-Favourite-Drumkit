@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="section">
+    <h2>My Favourite Drumkit</h2>
+        <img class="help" src="" alt="">
+        <ul class="instructions" id="instructions">
+            <li>Get your seat and drumsticks</li>
+            <li>Hit the drums just how you want to</li>
+            <li>Let the groove begin!</li>
+        </ul>
+</div>
+    <div class="wrapper">
+        <div class="row">
+            <div class="column"></div>
+            <div class="column">
+                <div class="key" data-key="87">
+                    <kbd>W</kbd>
+                </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column">
+                <div class="key" data-key="85">
+                    <kbd>U</kbd>
+                </div>
+            </div>
+            <div class="column"></div>
+        </div>
+        <div class="row">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column">
+                <div class="key" data-key="68">
+                    <kbd>D</kbd>
+                </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column">
+                <div class="key" data-key="72">
+                    <kbd>H</kbd>
+                </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+        <div class="row">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column">
+                <div class="key" data-key="90">
+                    <kbd>Z</kbd>
+                </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column">
+                <div class="key" data-key="77">
+                    <kbd>M</kbd>
+                </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+        <div class="row">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column">
+                <div class="key" data-key="86">
+                    <kbd>V</kbd>
+                </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+
+    </div>
+    <!-- <img class="drumset" src="Drums/drumset a_1.png" alt=""> -->
+</div>
+<audio src="sounds/openhat.wav" data-key="87"></audio>
+<!-- w -->
+<audio src="sounds/ride.wav" data-key="85"></audio>
+<!-- u -->
+<audio src="sounds/kick.wav" data-key="68"></audio>
+<!-- d -->
+<audio src="sounds/boom.wav" data-key="72"></audio>
+<!-- h -->
+<audio src="sounds/snare.wav" data-key="90"></audio>
+<!-- z -->
+<audio src="sounds/clap.wav" data-key="77"></audio>
+<!-- m -->
+<audio src="sounds/tom.wav" data-key="86"></audio>
+<!-- v -->
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("background-image1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: wheat;
+    /* max-height: 100vh; */
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+
+/* .drumset{
+    width: 55%;
+} */
+
+.section{
+    color: wheat;
+}
+
+.wrapper{
+    background-image: url("Drums/drumset a_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: table;
+    border: 0.3px  solid rgba(0, 0, 0, 0);
+    width: 41rem;
+    height: 30rem;
+}
+
+.row{
+    display: table-row;
+    border: 0.3px  solid rgba(0, 0, 0, 0);
+
+}
+.column{
+    display: table-cell;
+    border: 2px solid rgba(0, 0, 0, 0);
+    width: 70px;
+    position: relative;
+}
+
+.key{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.336); 
+    color:  rgb(250, 224, 109);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    transition: all 0.08s;
+    cursor: pointer;
+}
+
+.playing{
+    transform: scale(1,1);
+    border-color: rgb(250, 224, 109);
+    box-shadow: 0 0 10px rgb(250, 224, 109);
+}
+
+@media(max-width: 800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper{
+        width: 23em;
+        height: 17em;
+    }
+    .column{
+        width: 40px;
+    }
+    .key{
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 2.5px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .playing{
+        box-shadow: 0 0 7px rgb(250, 224, 109);
+        border-color: rgb(250, 224, 109);
+    }
+
+    
+}
